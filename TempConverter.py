@@ -1,26 +1,25 @@
-################################################################################
-#                     Lab 1 – A Python Program                                 #
-#                                                                              #
-# PROGRAMMER:        [your name] [your email address]                          #
-# CLASS:             [CS160 or CS200]                                          #
-# TERM:              Spring 2021                                               #
-# INSTRUCTOR:                                                      #
-# SUBMISSION DATE:   [date of submission]                                      #
-#                                                                              #
-# DESCRIPTION                                                                  #
-# [Include a brief but complete description of the problem the code is         #
-# solving.]                                                                    # 
-#                                                                              #
-# ORIGINAL SOURCE                                                              #
-# This code was originally written by:                                         #
-#    Author:   [writer of original program]                                    #
-#    Location: [indicate location, such as a website or textbook]              #
-#                                                                              #
-# COPYRIGHT:                                                                   #
-# This program is copyright (c)2021 [original-author-name], [your-name] and    #
-#                                                                  #
-#                                                                              #
-################################################################################
+#################################################################################
+#                     Lab 1 – A Python Program                                  #
+#                                                                               #
+# PROGRAMMER:        Jacob Hardman hard7293@bears.unco.edu                      #
+# CLASS:             CS200                                                      #
+# TERM:              Spring 2021                                                #
+# INSTRUCTOR:        Dean Zeller                                                #
+# SUBMISSION DATE:   1/15/2021                                                  #
+#                                                                               #
+# DESCRIPTION                                                                   #
+# This program will convert a temperature value in either Celsius or Fahrenheit #
+# to the opposite temperature scale.                                            # 
+#                                                                               #
+# ORIGINAL SOURCE                                                               #
+# This code was originally written by:                                          #
+#    Author:   Jacob Hardman                                                    #
+#    Location: https://github.com/thejacobhardman/Basic-Python-Console-Programs #
+#                                                                               #
+# COPYRIGHT:                                                                    #
+# This program is copyright (c)2021 Jacob Hardman, and Dean Zeller              #
+#                                                                               #
+#################################################################################
 
 import os
 

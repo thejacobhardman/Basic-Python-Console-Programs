@@ -1,26 +1,26 @@
-################################################################################
-#                     Lab 1 – A Python Program                                 #
-#                                                                              #
-# PROGRAMMER:        [your name] [your email address]                          #
-# CLASS:             [CS160 or CS200]                                          #
-# TERM:              Spring 2021                                               #
-# INSTRUCTOR:                                                       #
-# SUBMISSION DATE:   [date of submission]                                      #
-#                                                                              #
-# DESCRIPTION                                                                  #
-# [Include a brief but complete description of the problem the code is         #
-# solving.]                                                                    # 
-#                                                                              #
-# ORIGINAL SOURCE                                                              #
-# This code was originally written by:                                         #
-#    Author:   [writer of original program]                                    #
-#    Location: [indicate location, such as a website or textbook]              #
-#                                                                              #
-# COPYRIGHT:                                                                   #
-# This program is copyright (c)2021 [original-author-name], [your-name] and    #
-#                                                                #
-#                                                                              #
-################################################################################
+#################################################################################
+#                     Lab 1 – A Python Program                                  #
+#                                                                               #
+# PROGRAMMER:        Jacob Hardman hard7293@bears.unco.edu                      #
+# CLASS:             CS200                                                      #
+# TERM:              Spring 2021                                                #
+# INSTRUCTOR:        Dean Zeller                                                #
+# SUBMISSION DATE:   1/15/2021                                                  #
+#                                                                               #
+# DESCRIPTION                                                                   #
+# This program is linked to a file: 'words.txt'; This file contains a list of   #
+# nearly every word in the English language. The user will then be able to sort # 
+# through this list based on what letter each word starts with.                 #
+#                                                                               #
+# ORIGINAL SOURCE                                                               #
+# This code was originally written by:                                          #
+#    Author:   Jacob Hardman                                                    #
+#    Location: https://github.com/thejacobhardman/Basic-Python-Console-Programs #
+#                                                                               #
+# COPYRIGHT:                                                                    #
+# This program is copyright (c)2021 Jacob Hardman, and Dean Zeller              #
+#                                                                               #
+#################################################################################
 
 import os
 
@@ -33,7 +33,7 @@ def Filter_Word_List(letter):
     filtered_word_list = []
     for line in file:
         if letter == list(line)[0]:
-            word = line[:-2] #removing the \n characters from the word
+            word = line[:-2] #removing the '\n' characters from the word
             filtered_word_list.append(word)
     
     return filtered_word_list
