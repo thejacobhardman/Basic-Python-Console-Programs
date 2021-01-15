@@ -22,9 +22,15 @@
 #                                                                              #
 ################################################################################
 
+import os
+
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
+
 is_running = True
 
 while is_running:
+    cls()
     conversion = ""
 
     print("Welcome to Temperature Converter!")
@@ -54,4 +60,3 @@ while is_running:
         print(str(temp) + " F° is " + str(converted_temp) + " C°.")
     
     input("Please press any button to continue.")
-    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
