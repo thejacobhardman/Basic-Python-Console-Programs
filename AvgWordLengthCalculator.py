@@ -40,8 +40,8 @@ while is_running:
     print("Welcome to Average Word Length Calculator!")
     words = input("Please enter your list of words: ")
 
-    exclude = set(string.punctuation)
-    words = ''.join(ch for ch in words if ch not in exclude)
+    exclude = set(string.punctuation) ### I got this code that is used to strip the punctuation from the string from StackOverflow.com: https://stackoverflow.com/a/266162
+    words = ''.join(ch for ch in words if ch not in exclude) ### See above ^^^
 
     print(f"words: {words}")
     word_list = words.split()
