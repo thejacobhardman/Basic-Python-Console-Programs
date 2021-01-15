@@ -20,9 +20,43 @@
 #                                                                               #
 #################################################################################
 
-import os
+import os, string
 
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
+def Calculate_Avg_Word_Length(word_list):
+    avg_length = 0
 
+    for word in word_list:
+        avg_length += len(word)
+
+    return avg_length
+
+is_running = True
+while is_running:
+    cls()
+
+    print("Welcome to Average Word Length Calculator!")
+    words = input("Please enter your list of words: ")
+
+    exclude = set(string.punctuation)
+    words = ''.join(ch for ch in words if ch not in exclude)
+
+    print(f"words: {words}")
+    word_list = words.split()
+
+    avg_length = Calculate_Avg_Word_Length(word_list) / len(word_list)
+
+    print(f"You entered {len(word_list)} words. The average length of those words is {avg_length}.")
+
+    user_confirm = False
+    while not user_confirm:
+        selection = input("Would you like to run the program again? (Y/N): ")
+        if selection.lower() == "y":
+            user_confirm = True
+        elif selection.lower() == "n":
+            user_confirm = True
+            is_running = False
+        else:
+            print("Please enter a valid selection.")
