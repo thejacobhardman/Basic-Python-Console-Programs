@@ -63,7 +63,7 @@ while is_running:
 
     user_confirm = False
     while not user_confirm:
-        selection = input("Would you like to run the program again? (Y/N):")
+        selection = input("Would you like to run the program again? (Y/N): ")
         if selection.lower() == "y":
             user_confirm = True
         elif selection.lower() == "n":
