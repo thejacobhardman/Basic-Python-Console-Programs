@@ -27,8 +27,6 @@ import os
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
-file = open("words.txt", "r")
-
 def Filter_Word_List(letter):
     filtered_word_list = []
     for line in file:
@@ -40,6 +38,7 @@ def Filter_Word_List(letter):
 
 is_running = True
 while is_running:
+    file = open("words.txt", "r")
     cls()
     print("Welcome! \nAttached to this program is a .txt file with nearly every word in the English language!")
 
@@ -73,5 +72,4 @@ while is_running:
             print("Please enter a valid selection.")
 
     input("Press any button to continue.")
-
-file.close()
+    file.close()
