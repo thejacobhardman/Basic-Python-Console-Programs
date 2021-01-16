@@ -40,10 +40,10 @@ while is_running:
     while not user_confirm:
         selection = input("Please select which conversion you would like to perform: ")
 
-        if int(selection) == 1:
+        if selection == "1":
             conversion = "celsius"
             user_confirm = True
-        elif int(selection) == 2:
+        elif selection == "2":
             conversion = "fahrenheit"
             user_confirm = True
         else:
