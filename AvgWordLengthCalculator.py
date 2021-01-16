@@ -43,7 +43,6 @@ while is_running:
     exclude = set(string.punctuation) ### I got this code that is used to strip the punctuation from the string from StackOverflow.com: https://stackoverflow.com/a/266162
     words = ''.join(ch for ch in words if ch not in exclude) ### See above ^^^
 
-    print(f"words: {words}")
     word_list = words.split()
 
     avg_length = Calculate_Avg_Word_Length(word_list) / len(word_list)
