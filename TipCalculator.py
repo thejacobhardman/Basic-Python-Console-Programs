@@ -23,7 +23,7 @@
 
 import os
 
-def cls():
+def cls(): ### I got this method to clear the console screen from StackOverflow.com: https://stackoverflow.com/a/684344
     os.system('cls' if os.name=='nt' else 'clear')
 
 def Calculate_Tip(money_paid, tip_percent):
