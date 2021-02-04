@@ -47,7 +47,7 @@ while is_running:
 
     avg_length = Calculate_Avg_Word_Length(word_list) / len(word_list)
 
-    print(f"You entered {len(word_list)} words. The average length of those words is {avg_length}.")
+    print(f"You entered {len(word_list)} words. The average length of those words is {avg_length} letters.")
 
     user_confirm = False
     while not user_confirm:
